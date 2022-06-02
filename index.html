@@ -13,12 +13,35 @@
     <!-- add header -->
         <!-- add navbar for highscores -->
     <!-- main content -->
-        <!-- add a starting page -->
-            <!-- add button to start game -->
-        <!-- add questions (might be a seperate page) -->
-            <!-- add buttons for answer choices -->
-        <!-- add a highscore section (might be a seperate page) -->
-            <!-- add test box to all user to enter initals -->
+    <main>
+     <!-- add a starting page -->
+     <section>
+         <h2> Coding Check</h2>
+         <p>Test your knowledge of Javascript in this quiz. Answer the question within tthe given time and score points. Any incorrect answers will cause you to lose 10 seconds fromthe timer</p> 
+            <!-- add button to start game --> 
+            <button> Start Quiz! </button>
+     </section>
+     <!-- add questions (might be a seperate page) -->
+     <section>   
+         <!-- add buttons for answer choices -->
+         <div id="questions" style="display: none;">
+             <p id="Qtitle" class="pl-5 ml-2 pt-5 justify-content-center"></p>
+             <div>
+                 <p><button id="btnA" class="btn btn-dark"></button></p>
+                 <p><button id="btnB" class="btn btn-dark"></button></p>
+                 <p><button id="btnC" class="btn btn-dark"></button></p>
+                 <p><button id="btnD" class="btn btn-dark"></button></p>
+                 <hr id="break" style="display: none;" class="mt-4">
+                 <p id="checkAnswer" style="display: none;"></p>
+             </div>
+         </div>
+     </section>
+     <!-- add a highscore section (might be a seperate page) -->
+     <section>
+            <!-- add test box to all user to enter initals --> 
+    </section>
+    </main>
+
     <!-- footer -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
     <script src="./assets/script.js"> </script>
