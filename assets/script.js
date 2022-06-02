@@ -20,43 +20,43 @@
     // Set of Questions:
     const Questions = [
         {
+            question:"How do you add a comment in JS?",
+            choices: ["A.<!--Comment--> ","B. //Comment ","C. 'Comment' ","D. * Comment * "],
+            answer: "B. //Comment"
+        },
+        {
+            question:"Who invented Javascript?",
+            choices: ["A. Albert Eintsein ","B. Thomas Edison ","C. Leonadro Da Vinci","D. Brendan Eich"],
+            answer: "D. Brendan Eich"
+        },
+        {
+            question:"In an array, the fist index is always __.",
+            choices: ["A. 9 ","B. 0","C. 2","D. 1"],
+            answer: "B. 0"
+        },
+        {
+            question:"When adding JavaScript to an HTML element, you have to put it inside of ___.",
+            choices: ["A. <script> ","B. <JS> ","C. <js>","D. <JavaScript>"],
+            answer: "A. <script> "
+        },
+        {
             question:"",
-            choices: [],
+            choices: ["A. ","B. ","C. ","D. "],
             answer: ""
         },
         {
             question:"",
-            choices: [],
+            choices: ["A. ","B. ","C. ","D. "],
             answer: ""
         },
         {
             question:"",
-            choices: [],
+            choices: ["A. ","B. ","C. ","D. "],
             answer: ""
         },
         {
             question:"",
-            choices: [],
-            answer: ""
-        },
-        {
-            question:"",
-            choices: [],
-            answer: ""
-        },
-        {
-            question:"",
-            choices: [],
-            answer: ""
-        },
-        {
-            question:"",
-            choices: [],
-            answer: ""
-        },
-        {
-            question:"",
-            choices: [],
+            choices: ["A. ","B. ","C. ","D. "],
             answer: ""
         }
     ]
