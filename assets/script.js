@@ -60,7 +60,10 @@
                 }
             }
         }, 1000);
+        showQuiz();
     };
+    // begin display of quiz questions
+    
     // Set of Questions:
     const Questions = [
         {
