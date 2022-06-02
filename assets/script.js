@@ -40,24 +40,24 @@
             answer: "A. <script> "
         },
         {
-            question:"",
-            choices: ["A. ","B. ","C. ","D. "],
-            answer: ""
+            question:"A function in JavaScript is created as ___.",
+            choices: ["A. function create()","B. function = function create{}","C. create () function","D. something something"],
+            answer: "A. function create()"
         },
         {
-            question:"",
-            choices: ["A. ","B. ","C. ","D. "],
-            answer: ""
+            question:"In JS, how are functions called?",
+            choices: ["A. Yo! function create!","B. call function create() ","C. create()","D. call create ()"],
+            answer: "C. create()"
         },
         {
-            question:"",
-            choices: ["A. ","B. ","C. ","D. "],
-            answer: ""
+            question:"What is used to check if two variables are equal to one another when usinf if else statements?",
+            choices: ["A. ?= ","B. !=","C. == ","D. ==="],
+            answer: "C. =="
         },
         {
-            question:"",
-            choices: ["A. ","B. ","C. ","D. "],
-            answer: ""
+            question:"A proper if statement is written as __.",
+            choices: ["A. if i < 9 ","B. if (i < 9)","C. if i < 9 then ","D. idk"],
+            answer: " B. if (i < 9)"
         }
     ]
     // Create a function which lets user know if anser is correct or incorrect when an answer is inputted
