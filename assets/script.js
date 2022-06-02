@@ -145,6 +145,15 @@
             gameOver();
         }
     }
+    // game over function:
+    function gameOver() {
+        start.style.display = "none";
+        questions.style.display = "none";
+        timer.style.display = "none";
+        timeUp.style.display = "block";
+        summary.style.display = "block";
+        finalScore.textContent = correctAnswer;
+    }
     // Have some sort of reference to elements... use document.getElementById
     // create a function for when games over and display final score
     // create fucntion for user to add their initals and store highscore in local storage
