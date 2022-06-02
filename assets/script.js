@@ -63,7 +63,16 @@
         showQuiz();
     };
     // begin display of quiz questions
-    
+    function showQuiz(){
+        nextQuestion();
+    }
+    function nextQuestion () {
+        Qtitle.textContent = questions[questionIndex].question;
+        choiceA.textContent = questions[questionIndex].choices[0];
+        choiceB.textContent = questions[questionIndex].choices[1];
+        choiceC.textContent = questions[questionIndex].choices[2]
+        ChoiceD.textContent = questions[questionIndex].choices[3]
+    }
     // Set of Questions:
     const Questions = [
         {
