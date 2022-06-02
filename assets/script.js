@@ -37,6 +37,30 @@
         var initials = document.getElementById("initials");
         var submitInitials = document.getElementById("submitInitials");
     // create a function for a timer to start once the button to begin is clicked
+    var totalTime = 151;
+    function newQuiz(){
+        questionIndex = 0;
+        totalTime = 150;
+        timeLft.textContent = totalTime;
+        initials.textContent ="";
+
+        start.style.display = "none";
+        questions.style.display = "block";
+        timer.style.display = "block";
+        timeUp.style.display = "none";
+
+        // timer function:
+        var startTimer = setInterval (function () {
+            totalTime--;
+            timeLft.textContent = totalTime;
+            if(totalTime <= 0) {
+                clearInterval(startTimer);
+                if (questionIndex < questions.length -1){
+                    gameOver();
+                }
+            }
+        }, 1000);
+    };
     // Set of Questions:
     const Questions = [
         {
