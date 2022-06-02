@@ -18,6 +18,48 @@
     // Define variables: 
     // create a function for a timer to start once the button to begin is clicked
     // Set of Questions:
+    const Questions = [
+        {
+            question:"",
+            choices: [],
+            answer: ""
+        },
+        {
+            question:"",
+            choices: [],
+            answer: ""
+        },
+        {
+            question:"",
+            choices: [],
+            answer: ""
+        },
+        {
+            question:"",
+            choices: [],
+            answer: ""
+        },
+        {
+            question:"",
+            choices: [],
+            answer: ""
+        },
+        {
+            question:"",
+            choices: [],
+            answer: ""
+        },
+        {
+            question:"",
+            choices: [],
+            answer: ""
+        },
+        {
+            question:"",
+            choices: [],
+            answer: ""
+        }
+    ]
     // Create a function which lets user know if anser is correct or incorrect when an answer is inputted
         // if question is right then add a point to score
         // if question is wrong, create a function to remove 10 sec from timer
