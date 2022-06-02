@@ -15,7 +15,15 @@
 // THEN I can save my initials and my score
 
 // PSUEDOCODE:
-    // Define variables: 
+    // references: 
+        // start game
+        var start = document.getElementById("start");
+        var startBtn = document.getElementById("startBtn")
+        // timer
+        var timer = document.getElementById("timer");
+        var timeLft = document.getElementById("timeLft");
+        var timeUp = document.getElementById("timeUp");
+        
     // create a function for a timer to start once the button to begin is clicked
     // Set of Questions:
     const Questions = [
@@ -61,9 +69,19 @@
         }
     ]
     // Create a function which lets user know if anser is correct or incorrect when an answer is inputted
+    function checkAnswer(answer) {
+        var lineBreak = document.getElementById("lineBreak");
+        lineBreak.style.display = "block";
+        answerCheck.style.display = "block";
+
         // if question is right then add a point to score
+        if (Questions[questionIndex].answer === Questions[questionIndex].choices[answer]){
+            correct
+        }
         // if question is wrong, create a function to remove 10 sec from timer
+
         // have it repeat with each question
+    }
     // Have some sort of reference to elements... use document.getElementById
     // create a function for when games over and display final score
     // create fucntion for user to add their initals and store highscore in local storage
