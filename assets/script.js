@@ -16,10 +16,18 @@
 
 // PSUEDOCODE:
     // references: 
-        // start game
+        // start game:
         var start = document.getElementById("start");
-        var startBtn = document.getElementById("startBtn")
-        // timer
+        var startBtn = document.getElementById("startBtn");
+        // reference buttons to choices and questions:
+        var questions = document.getElementById("questions");
+        var Qtitle = document.getElementById("Qtitle");
+        var choiceA = document.getElementById("btnA");
+        var choiceB = document.getElementById("btnB");
+        var choiceC = document.getElementById("btnC");
+        var ChoiceD = document.getElementById("btnD");
+        var checkAnswer = document.getElementById("checkanswer");
+        // timer:
         var timer = document.getElementById("timer");
         var timeLft = document.getElementById("timeLft");
         var timeUp = document.getElementById("timeUp");
