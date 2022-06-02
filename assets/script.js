@@ -31,7 +31,11 @@
         var timer = document.getElementById("timer");
         var timeLft = document.getElementById("timeLft");
         var timeUp = document.getElementById("timeUp");
-        
+        // score summary references:
+        var summary = document.getElementById("scoreSum");
+        var finalScore = document.getElementById("finalScore");
+        var initials = document.getElementById("initials");
+        var submitInitials = document.getElementById("submitInitials");
     // create a function for a timer to start once the button to begin is clicked
     // Set of Questions:
     const Questions = [
