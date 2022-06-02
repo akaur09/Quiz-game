@@ -1,10 +1,3 @@
-// ## User Story
-
-// ```
-// AS A coding boot camp student
-// I WANT to take a timed quiz on JavaScript fundamentals that stores high scores
-// SO THAT I can gauge my progress compared to my peers
-// ```
 
 // ## Acceptance Criteria
 
@@ -20,3 +13,15 @@
 // THEN the game is over
 // WHEN the game is over
 // THEN I can save my initials and my score
+
+// PSUEDOCODE:
+    // Define variables: 
+    // create a function for a timer to start once the button to begin is clicked
+    // Set of Questions:
+    // Create a function which lets user know if anser is correct or incorrect when an answer is inputted
+        // if question is right then add a point to score
+        // if question is wrong, create a function to remove 10 sec from timer
+        // have it repeat with each question
+    // Have some sort of reference to elements... use document.getElementById
+    // create a function for when games over and display final score
+    // create fucntion for user to add their initals and store highscore in local storage
