@@ -116,6 +116,11 @@
             answer: " B. if (i < 9)"
         }
     ]
+    // variables for checking answer
+    var correctAnswer = 0;
+    var questionNumber = 0;
+    var Result;
+    var questionIndex = 0;
     // Create a function which lets user know if anser is correct or incorrect when an answer is inputted
     function checkAnswer(answer) {
         var lineBreak = document.getElementById("lineBreak");
@@ -124,11 +129,21 @@
 
         // if question is right then add a point to score
         if (Questions[questionIndex].answer === Questions[questionIndex].choices[answer]){
-            correct
+            correctAnswer++;
+            answerCheck.textContent = "correct";
+        } else {
+          // if question is wrong, create a function to remove 10 sec from timer
+            totalTime -= 10;
+            timeLft.textContent = totalTime;
+            answerCheck.textContent = "Incorrect.";
         }
-        // if question is wrong, create a function to remove 10 sec from timer
-
         // have it repeat with each question
+        questionIndex++; 
+        if(questionIndex < questions.length){
+            nextQuestion();
+        } else {
+            gameOver();
+        }
     }
     // Have some sort of reference to elements... use document.getElementById
     // create a function for when games over and display final score
