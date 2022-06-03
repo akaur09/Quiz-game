@@ -25,7 +25,7 @@
         var choiceA = document.getElementById("btnA");
         var choiceB = document.getElementById("btnB");
         var choiceC = document.getElementById("btnC");
-        var ChoiceD = document.getElementById("btnD");
+        var choiceD = document.getElementById("btnD");
         var checkAnswer = document.getElementById("checkanswer");
         // timer:
         var timer = document.getElementById("timer");
@@ -71,7 +71,7 @@
         choiceA.textContent = questions[questionIndex].choices[0];
         choiceB.textContent = questions[questionIndex].choices[1];
         choiceC.textContent = questions[questionIndex].choices[2]
-        ChoiceD.textContent = questions[questionIndex].choices[3]
+        choiceD.textContent = questions[questionIndex].choices[3]
     }
     // Set of Questions:
     const Questions = [
@@ -164,7 +164,22 @@
     choiceA.addEventListener("click", chooseA);
     choiceB.addEventListener("click", chooseB);
     choiceC.addEventListener("click", chooseC);
-    ChoiceD.addEventListener("click", chooseD);
-
+    choiceD.addEventListener("click", chooseD);
+    //  add event listener for submiting initals
+    submitInitials.addEventListener("click", function (event){
+        storeHighScores(event);
+    });
+    viewHighScore.addEventListener("click", function(){
+        showHighScores(event);
+    });
+    goBack.addEventListener("click",function(){
+        start.style.display = "block";
+        highScoreSec.style.display = "none";
+    });
+    clearHighScore.addEventListener("click", function() {
+       window.localStorage.removeItem("high scores");
+       listOfHighScores.innerHTML = "high scores cleared";
+       listOfHighScores.setAttribute("style", "font-family: 'Archivo, sans-serif; font-style: italic;") 
+    });
     // create a function for when games over and display final score
     // create fucntion for user to add their initals and store highscore in local storage
