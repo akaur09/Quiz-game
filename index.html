@@ -13,7 +13,17 @@
     <!-- add header -->
         <!-- add navbar for highscores -->
     <!-- main content -->
-    <main>
+    <main class="container fluid">
+        <!-- add timer and viewing of score -->
+        <section class="row">
+            <div class="col text-left">
+                <a href="#" id="viewHighScore"> View Your High Scores</a>
+            </div>
+            <div id="timer" class="col text-right">
+                <i class="far fa-clock"></i> Time:<span id="timelft">0</span>
+            </div>
+            <div id="timeUp" class="col test-right" style="display: none;"> Time's Up</div>
+        </section>
      <!-- add a starting page -->
      <section id ="start">
          <h2> Coding Check</h2>
