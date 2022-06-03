@@ -154,6 +154,17 @@
         summary.style.display = "block";
         finalScore.textContent = correctAnswer;
     }
-    // Have some sort of reference to elements... use document.getElementById
+    // add functions fof buttons to work for choices
+    function chooseA() {checkAnswer(0) ;}
+    function chooseB() {checkAnswer(1) ;}
+    function chooseC() {checkAnswer(2) ;}
+    function chooseD() {checkAnswer(3) ;}
+    // add event listeners for buttons to actually work
+    startBtn.addEventListener("click", newQuiz);
+    choiceA.addEventListener("click", chooseA);
+    choiceB.addEventListener("click", chooseB);
+    choiceC.addEventListener("click", chooseC);
+    ChoiceD.addEventListener("click", chooseD);
+
     // create a function for when games over and display final score
     // create fucntion for user to add their initals and store highscore in local storage
