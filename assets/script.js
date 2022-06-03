@@ -36,6 +36,11 @@
         var finalScore = document.getElementById("finalScore");
         var initials = document.getElementById("initials");
         var submitInitials = document.getElementById("submitInitials");
+        // variables for checking answer
+        var correctAnswer = 0;
+        var questionNumber = 0;
+        var Result;
+        var questionIndex = 0;
     // create a function for a timer to start once the button to begin is clicked
     var totalTime = 151;
     function newQuiz(){
@@ -75,12 +80,12 @@
     }
     // fix function to iterate through questions (try another method)
         function getQuestion(){
-            var currentQuestions = Questions[currentQuestionsIndex];
+            var questionIndex = Questions[questionIndex];
             var Qtitle = document.getElementById("Qtitle");
-            Qtitle.textContent = currentQuestions.title;
+            Qtitle.textContent = questionIndex.title;
             chooseEl.innerHTML = "";
-            
-            currentQuestions.choices.forEach(function (choices, i){
+
+            questionIndex.choices.forEach(function (choices, i){
                 var chooseNode = document.createElement ("button");
                 chooseNode.setAttribute("class", "choices");
                 chooseNode.setAttribute("value", choices);
@@ -133,17 +138,9 @@
             answer: " B. if (i < 9)"
         }
     ]
-    // variables for checking answer
-    var correctAnswer = 0;
-    var questionNumber = 0;
-    var Result;
-    var questionIndex = 0;
     // Create a function which lets user know if anser is correct or incorrect when an answer is inputted
     function checkAnswer(answer) {
-        var lineBreak = document.getElementById("lineBreak");
-        lineBreak.style.display = "block";
-        answerCheck.style.display = "block";
-
+    
         // if question is right then add a point to score
         if (Questions[questionIndex].answer === Questions[questionIndex].choices[answer]){
             correctAnswer++;
@@ -171,11 +168,7 @@
         summary.style.display = "block";
         finalScore.textContent = correctAnswer;
     }
-    // add functions fof buttons to work for choices
-    // function chooseA() {checkAnswer(0) ;}
-    // function chooseB() {checkAnswer(1) ;}
-    // function chooseC() {checkAnswer(2) ;}
-    // function chooseD() {checkAnswer(3) ;}
+    
     // add event listeners for buttons to actually work
     startBtn.addEventListener("click", newQuiz);
     choiceA.addEventListener("click", checkAnswer);
