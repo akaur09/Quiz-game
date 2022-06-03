@@ -8,6 +8,7 @@ Once the start quizz button is clicked the user can go through and answer each q
 
 Deployed Link:  https://akaur09.github.io/Quiz-game/
 
+![Alt img](image.png)
 ## Credits
 Amnider Kaur (github: https://github.com/akaur09)
 ## Lisence
