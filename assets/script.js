@@ -73,6 +73,23 @@
         choiceC.textContent = Questions[questionIndex].choices[2]
         choiceD.textContent = Questions[questionIndex].choices[3]
     }
+    // fix function to iterate through questions (try another method)
+        function getQuestion(){
+            var currentQuestions = Questions[currentQuestionsIndex];
+            var Qtitle = document.getElementById("Qtitle");
+            Qtitle.textContent = currentQuestions.title;
+            chooseEl.innerHTML = "";
+            
+            currentQuestions.choices.forEach(function (choices, i){
+                var chooseNode = document.createElement ("button");
+                chooseNode.setAttribute("class", "choices");
+                chooseNode.setAttribute("value", choices);
+
+                chooseNode.textContent = i + 1 + "." + choices;
+                chooseNode.onclick = questionClick;
+                chooseEl.appendChild(chooseNode);
+            })
+        }
     // Set of Questions:
     const Questions = [
         {
@@ -155,16 +172,16 @@
         finalScore.textContent = correctAnswer;
     }
     // add functions fof buttons to work for choices
-    function chooseA() {checkAnswer(0) ;}
-    function chooseB() {checkAnswer(1) ;}
-    function chooseC() {checkAnswer(2) ;}
-    function chooseD() {checkAnswer(3) ;}
+    // function chooseA() {checkAnswer(0) ;}
+    // function chooseB() {checkAnswer(1) ;}
+    // function chooseC() {checkAnswer(2) ;}
+    // function chooseD() {checkAnswer(3) ;}
     // add event listeners for buttons to actually work
     startBtn.addEventListener("click", newQuiz);
-    choiceA.addEventListener("click", chooseA);
-    choiceB.addEventListener("click", chooseB);
-    choiceC.addEventListener("click", chooseC);
-    choiceD.addEventListener("click", chooseD);
+    choiceA.addEventListener("click", checkAnswer);
+    choiceB.addEventListener("click", checkAnswer);
+    choiceC.addEventListener("click", checkAnswer);
+    choiceD.addEventListener("click", checkAnswer);
     //  add event listener for submiting initals
     submitInitials.addEventListener("click", function (event){
         storeHighScores(event);
