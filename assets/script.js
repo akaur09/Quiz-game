@@ -41,7 +41,7 @@
     function newQuiz(){
         questionIndex = 0;
         totalTime = 150;
-        timeLft.textContent = totalTime;
+        timeLft = totalTime;
         initials.textContent ="";
 
         start.style.display = "none";
@@ -67,11 +67,11 @@
         nextQuestion();
     }
     function nextQuestion () {
-        Qtitle.textContent = questions[questionIndex].question;
-        choiceA.textContent = questions[questionIndex].choices[0];
-        choiceB.textContent = questions[questionIndex].choices[1];
-        choiceC.textContent = questions[questionIndex].choices[2]
-        choiceD.textContent = questions[questionIndex].choices[3]
+        Qtitle.textContent = Questions[questionIndex].question;
+        choiceA.textContent = Questions[questionIndex].choices[0];
+        choiceB.textContent = Questions[questionIndex].choices[1];
+        choiceC.textContent = Questions[questionIndex].choices[2]
+        choiceD.textContent = Questions[questionIndex].choices[3]
     }
     // Set of Questions:
     const Questions = [
